@@ -1,0 +1,19 @@
+{
+    "name": "walide/octabloom_framwork",
+    "type": "project",
+    "platform": {
+        "php": "^5.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Classes\\": "src/Classes",
+            "Interfaces\\": "src/Interfaces",
+            "App\\Controllers\\": "src/App/Controllers",
+            "App\\Models\\": "src/App/Models"
+        },
+        "files": [
+            "src/Helpers/app.helper.php"
+        ]
+    },
+    "minimum-stability": "dev"
+}

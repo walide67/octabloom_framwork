@@ -25,11 +25,11 @@ $app->load_routes();
 
 $app->set_include_path();
 
-if (isset($_SESSION['start']) && (time() - $_SESSION['start'] > SESSION_TIMEOUT)) {
-  session_unset(); 
-  session_destroy(); 
-  set_session_message('login_error', 'session destroyed');
-  redirect('/login');
-}
+// if (isset($_SESSION['start']) && (time() - $_SESSION['start'] > SESSION_TIMEOUT)) {
+//   session_unset(); 
+//   session_destroy(); 
+//   set_session_message('login_error', 'session destroyed');
+//   redirect('/login');
+// }
 
-$_SESSION['start'] = time();
+// $_SESSION['start'] = time();
